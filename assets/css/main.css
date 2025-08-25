@@ -1,0 +1,164 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px 80px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Distributes space between items */
+}
+
+.other a {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    width: calc(50% - 10px); /* Adjust 10px based on desired padding/gap */
+    padding: 15px; /* Add desired padding to items */
+    margin-bottom: 20px; /* Add vertical spacing between rows */
+    text-decoration: none;
+}
+
+.other a img {
+    max-width: 100%;
+    width: 309px;
+    height: 309px;
+    object-fit: contain;
+}
+
+.other a  p {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    margin-bottom: 39px;
+    color: #2c3e50;
+}
+
+.contact {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.portfolio a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 20px;
+    color: #2c3e50;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+.job span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+ul {
+    margin: 8px 0 15px 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.skills, .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tag {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #888;
+}
+.center {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 186px;
+    height: 186px;
+    background-image: url(../img/photo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .photo {
+        display: none;
+    }
+
+    .other a {
+        width: 100%;
+    }
+
+    .other a img {
+        margin: 0 auto;
+        display: block;
+    }
+    
+}
+
